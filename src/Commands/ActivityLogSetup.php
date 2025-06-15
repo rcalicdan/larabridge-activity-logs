@@ -29,7 +29,7 @@ class ActivityLogSetup extends BaseCommand
      *
      * @var string
      */
-    protected $name = 'activty-log:setup';
+    protected $name = 'activity-log:setup';
 
     /**
      * A brief description of the command's purpose.
@@ -43,7 +43,7 @@ class ActivityLogSetup extends BaseCommand
      *
      * @var string
      */
-    protected $usage = 'activty-log:setup';
+    protected $usage = 'activity-log:setup';
 
     /**
      * Available arguments for the command.
