@@ -5,6 +5,7 @@ namespace Rcalicdan\LarabridgeActivityLogs\Commands;
 use CodeIgniter\CLI\BaseCommand;
 use Rcalicdan\Ci4Larabridge\Commands\Handlers\LaravelSetup\MigrationHandler;
 use Rcalicdan\LarabridgeActivityLogs\Commands\Handlers\ActivityLogHandler\ConfigHandler;
+use Rcalicdan\LarabridgeActivityLogs\Commands\Handlers\ActivityLogHandler\ModelHandler;
 
 /**
  * Command to perform the initial setup for the CodeIgniter 4 Laravel Module.
@@ -89,8 +90,10 @@ class ActivityLogSetup extends BaseCommand
 
         $configHandler = new ConfigHandler($this->sourcePath, $this->distPath);
         $migrationHandler = new MigrationHandler($this->sourcePath, $this->distPath);
+        $modelHandler = new ModelHandler($this->sourcePath, $this->distPath);
 
         $configHandler->publishConfig();
         $migrationHandler->copyMigrationFiles();
+        $modelHandler->copyModel();
     }
 }
