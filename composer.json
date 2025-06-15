@@ -1,0 +1,23 @@
+{
+    "name": "rcalicdan/larabridge-activity-logs",
+    "description": "An extension library for ci4 larabridge package that provide db activity logs functionality that logs eloquent database changes",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rcalicdan\\LarabridgeActivityLogs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Reymart A. Calicdan",
+            "email": "reymart.calicdan06@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {
+        "codeigniter4/framework": "^4.0",
+        "rcalicdan/ci4-larabridge": "dev-main"
+    }
+}
